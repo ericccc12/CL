@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Linear e Algoritmo Simplex</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <style>
+        body {
+            padding-top: 60px; /* Para ajustar o conteúdo abaixo do cabeçalho fixo */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">CL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Página Inicial</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./cb.html">Conceitos Básicos<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./de.html">Derivadas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./in.html">Integrais</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sobre.html">Sobre</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Função, Domínio de Função, Limites e Continuidade</h1>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Função</h2>
+                <br >
+                <h4>O que é?</h4>
+                <p>
+                    Uma função é uma relação matemática que associa cada elemento de um conjunto 𝐴 (domínio) a exatamente um elemento de um conjunto 𝐵 (contradomínio).
+                </p>
+                <p>
+                    Em termos simples, a programação linear envolve a maximização ou minimização de uma função linear, sujeita a um conjunto de restrições lineares. A função a ser otimizada é chamada de função objetivo, enquanto as restrições representam as limitações impostas ao problema.
+                </p>
+                <p>
+                    Este tipo de técnica é amplamente utilizado em diversas áreas, como logística, economia, engenharia, gestão de produção, entre outras, para resolver problemas complexos de forma eficiente e encontrar soluções ótimas.    
+                </p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ruc5eKGbzak?si=jqw8PYYEvE6fAFod" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/muZMmT84w-A?si=KGFYjzAXB2BiSerG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Domínio de uma Função</h2>
+                <h4>O que é?</h4>
+                <p>
+                    O domínio é o conjunto de todos os valores possíveis de 𝑥 para os quais a função está definida.
+                </p>
+                <h4>Para determinar o domínio</h4>
+                <p>Evite divisões por zero e Certifique-se de que raízes pares não tenham números negativos.</p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wPesFG0cG7g?si=JMZ6396nmieV1saM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lrpNTBD1_jE?si=_eRLaIjDjlMaRRvX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pckgVWNkpdo?si=mnQyEz1DRJ_gsZtv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Limites de Funções</h2>
+                <h4>O que é?</h4>
+                <p>
+                    O limite descreve o comportamento de uma função f(x) quando x se aproxima de um determinado valor 𝑎.
+                </p>
+                <p>Conforme x se aproxima de 𝑎, f(x) se aproxima de L.</p>
+                <h4>Propriedades Importantes</h4>
+                <ul>
+                    <li>Somatório</li>
+                    <li>Produto</li>
+                    <li>Divisão</li>
+                </ul>
+                <h4>Limites Laterais</h4>
+                <ul>
+                    <li>Limite pela direit: Avaliamos x que se aproximam de 𝑎 por valores maiores</li>
+                    <li>Limite pela esquerda: Avaliamos x que se aproximam de 𝑎 por valores menores.</li>
+                </ul>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/U-5vck_1hjE?si=6MDmSq714FHZJt-9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/K72ePaJbg2o?si=Ry59LJWjziIGkR1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Continuidade de Funções</h2>
+                <h4>O que é?</h4>
+                <p>
+                    Uma função é contínua em um ponto 𝑎 a se f(a) está definida, o limite de f(x) existe, valor de f(a) igual ao limite.
+                </p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iiOrtGZVqnk?si=nLv7oFZDczAGiSm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QF3Rgk76OX4?si=AmWVwdkfevoNnQon" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e scripts adicionais -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">Desenvolvido por Eric e Lorena &copy; 2024</span>
+    </div>
+</footer>
+
+</html>

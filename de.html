@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derivadas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Custom styles -->
+    <style>
+        body {
+            padding-top: 60px; /* Para ajustar o conteúdo abaixo do cabeçalho fixo */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">CL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cb.html">Conceitos Básicos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./de.html">Derivadas<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./in.html">Integrais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Derivadas</h1>
+            </div>
+        </div>
+
+        <!-- O que é uma Derivada -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>O que é uma Derivada?</h2>
+                <p>
+                    A derivada de uma função mede a taxa de variação instantânea de sua saída em relação à sua entrada. Em outras palavras, descreve como a função muda em um ponto específico.
+                </p>
+                <p>
+                    É frequentemente representada como \( f'(x) \) ou \( \frac{dy}{dx} \), onde \( y \) é a função de \( x \).
+                </p>
+            </div>
+        </div>
+
+        <!-- Regras de Derivação -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Regras de Derivação</h2>
+                <h4>1. Regra do Produto</h4>
+                <p>
+                    Se \( u(x) \) e \( v(x) \) são funções deriváveis, a derivada de seu produto é:  
+                    \[ (u \cdot v)' = u' \cdot v + u \cdot v' \]
+                </p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hTP0Ck53jSQ?si=JMkuEhuKWfhHc3EB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/li1_l_N9fvg?si=U_XwSK05X2KV4X-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                
+                <h4>2. Regra do Quociente</h4>
+                <p>
+                    Se \( u(x) \) e \( v(x) \) são funções deriváveis e \( v(x) \neq 0 \), a derivada do quociente é:  
+                    \[ \left(\frac{u}{v}\right)' = \frac{u' \cdot v - u \cdot v'}{v^2} \]
+                </p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dEqeCSowIDQ?si=Dfi9Du0AgaoA40SF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aOxX13_VxdA?si=UWS5xWZcRHbbQryH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+
+                <h4>3. Derivada da Composta (Regra da Cadeia)</h4>
+                <p>
+                    Se \( y = f(g(x)) \), então a derivada é:  
+                    \[ \frac{dy}{dx} = f'(g(x)) \cdot g'(x) \]
+                </p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9_AFq2nlpSc?si=I_ZYqpCw1lmxDMnZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZzcJmDCUp-c?si=IeuYa6u7Y791b4u2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+            </div>
+        </div>
+
+        <!-- Aplicação: Reta Tangente -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Aplicação: Reta Tangente</h2>
+                <p>
+                    A derivada de uma função em um ponto também pode ser interpretada como a inclinação da reta tangente ao gráfico da função naquele ponto.
+                </p>
+                <p>
+                    A equação da reta tangente em um ponto \( (x_0, f(x_0)) \) é dada por:  
+                    \[ y - f(x_0) = f'(x_0) \cdot (x - x_0) \]
+                </p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ou5Zwp_e_tc?si=YlVXx10M3pb8UjfS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UKnAauwgy2g?si=Q16DJ5ujYyJ462_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e scripts adicionais -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">Desenvolvido por Eric e Lorena &copy; 2024</span>
+    </div>
+</footer>
+
+</html>

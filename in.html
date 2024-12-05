@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrais</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Custom styles -->
+    <style>
+        body {
+            padding-top: 60px; /* Para ajustar o conteúdo abaixo do cabeçalho fixo */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">CL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cb.html">Conceitos Básicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./de.html">Derivadas</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./in.html">Integrais<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Integrais</h1>
+            </div>
+        </div>
+
+        <!-- Integrais Indefinidas -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Integrais Indefinidas</h2>
+                <p>
+                    A integral indefinida de uma função \( f(x) \) é representada como:  
+                    \[ \int f(x) \, dx = F(x) + C \]
+                </p>
+                <p>
+                    Onde \( F(x) \) é a função antiderivada de \( f(x) \), e \( C \) é a constante de integração. Ela representa uma família de funções que têm a mesma derivada.
+                </p>
+                <h4>Exemplo</h4>
+                <p>
+                    Dada \( f(x) = 2x \), sua integral indefinida é:  
+                    \[ \int 2x \, dx = x^2 + C \]
+                </p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M_xCxHcBdBo?si=Hbje3v1rly6TvDeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UTELlQivogs?si=H93p34xLK0xjPJ5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+
+            </div>
+        </div>
+
+        <!-- Integrais Definidas -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Integrais Definidas</h2>
+                <p>
+                    A integral definida calcula a área sob a curva da função \( f(x) \) entre dois pontos \( a \) e \( b \):  
+                    \[ \int_a^b f(x) \, dx = F(b) - F(a) \]
+                </p>
+                <p>
+                    Essa integral fornece um valor numérico que representa a área acumulada entre os limites \( a \) e \( b \).
+                </p>
+                <h4>Exemplo</h4>
+                <p>
+                    Para \( f(x) = x \), a integral definida de 0 a 2 é:  
+                    \[ \int_0^2 x \, dx = \left[ \frac{x^2}{2} \right]_0^2 = \frac{2^2}{2} - \frac{0^2}{2} = 2 \]
+                </p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WfFF107cdOs?si=vBNKTKZlFPReS84i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L8COj3L4GwA?si=hjnJ7vaDP2Su0ckw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+
+            </div>
+        </div>
+
+        <!-- Área Sob Curvas -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>Área Sob Curvas</h2>
+                <p>
+                    A integral definida é frequentemente usada para calcular a área sob a curva de uma função em um intervalo específico. Se \( f(x) \geq 0 \) no intervalo \([a, b]\), a área sob a curva é dada por:  
+                    \[ \text{Área} = \int_a^b f(x) \, dx \]
+                </p>
+                <p>
+                    No caso de \( f(x) \) assumir valores negativos, a integral também pode ser usada para calcular a área líquida (considerando áreas positivas e negativas).
+                </p>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aAyKMSLNLuE?si=CWLA2chHP9stH8IZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wv23YefHGJA?si=zXFjlMfVOZ24aDwe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e scripts adicionais -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">Desenvolvido por Eric e Lorena &copy; 2024</span>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <style>
+        body {
+            padding-top: 60px; /* Para ajustar o conteúdo abaixo do cabeçalho fixo */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">CL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Página Inicial<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cb.html">Conceitos Básicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./de.html">Derivadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./in.html">Integrais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container mt-5">
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <h1 class="display-4 fw-bold text-primary">Pioneiros do Cálculo</h1>
+                <p class="lead">O cálculo diferencial e integral é uma ferramenta matemática poderosa que revolucionou a forma como entendemos mudanças e áreas no universo. Desenvolvido por grandes matemáticos como Isaac Newton e Gottfried Wilhelm Leibniz no século XVII, o cálculo oferece métodos para analisar taxas de variação e acumulação. Suas aplicações vão desde a física e engenharia até a economia e ciência da computação.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://s2.glbimg.com/5aUUuVCJkKibfgtZZs88i4pG8ks=/e.glbimg.com/og/ed/f/original/2017/08/18/colagem_sem_titulo.jpg" 
+                     class="img-fluid rounded shadow mt-3" 
+                     alt="Ilustração de Programação Linear">
+            </div>
+        </div>
+
+        <!-- Cards dos Pioneiros -->
+        <div class="container py-5 rounded-3">
+            <div class="row g-4 justify-content-center">
+                <!-- Card Newton -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp5zuWT5Uv1MfUvfnW8E33kZpeOVoFQ4Ij5A&s" 
+                             class="card-img-top" 
+                             alt="Isaac Newton">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark">
+                                <i class="bi bi-person-circle"></i> Isaac Newton
+                            </h5>
+                            <p class="card-text">Cientista inglês, Newton desenvolveu o cálculo simultaneamente a Leibniz, focando em suas aplicações práticas, como a análise de movimento e forças na física.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Leibniz -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Leibniz_Hannover.jpg/220px-Leibniz_Hannover.jpg" 
+                             class="card-img-top" 
+                             alt="Gottfried Wilhelm Leibniz">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark">
+                                <i class="bi bi-person-circle"></i> Gottfried Wilhelm Leibniz
+                            </h5>
+                            <p class="card-text">Filósofo, matemático e cientista alemão, Leibniz desenvolveu a notação do cálculo usada até hoje, como o símbolo ∫ para integrais e dx para diferenciais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e scripts adicionais -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+        <span class="text-muted">Desenvolvido por Eric e Lorena &copy; 2024</span>
+    </div>
+</footer>
+
+</html>
